@@ -2,6 +2,7 @@
   "name": "react-message",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sebastian-bah.github.io/message/",
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
@@ -24,7 +25,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "react-scripts server.js",
+    "json-server": "json-server --watch public/db.json --port=3001",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
